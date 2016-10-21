@@ -1,0 +1,22 @@
+{
+  "name": "delight",
+  "version": "1.0.0",
+  "description": "ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Admin-sources/Delight-1.0.git"
+  },
+  "keywords": [
+    "ui"
+  ],
+  "author": "rahul.wu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Admin-sources/Delight-1.0/issues"
+  },
+  "homepage": "https://github.com/Admin-sources/Delight-1.0#readme"
+}
