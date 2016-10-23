@@ -9,8 +9,7 @@
     }</style>
     <meta charset="UTF-8">
     <!--[if IE]>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]--><title>Delight - Bootstrap Material Design
-    Admin Template</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]--><title>Buttons</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
@@ -952,349 +951,360 @@
                                 class="glyph-icon icon-linecons-cloud"></i></a></div>
                     </div>
                 </div>
-                <script type="text/javascript" src="../../assets/widgets/skycons/skycons.js"></script>
-                <script type="text/javascript" src="../../assets/widgets/datatable/datatable.js"></script>
-                <script type="text/javascript" src="../../assets/widgets/datatable/datatable-bootstrap.js"></script>
-                <script type="text/javascript" src="../../assets/widgets/datatable/datatable-tabletools.js"></script>
-                <script type="text/javascript">/* Datatables basic */
+                <div id="page-title"><h2>Buttons</h2>
 
-                $(document).ready(function () {
-                    $('#datatable-example').dataTable();
-                });
-
-                /* Datatables hide columns */
-
-                $(document).ready(function () {
-                    var table = $('#datatable-hide-columns').DataTable({
-                        "scrollY": "300px",
-                        "paging": false
-                    });
-
-                    $('#datatable-hide-columns_filter').hide();
-
-                    $('a.toggle-vis').on('click', function (e) {
-                        e.preventDefault();
-
-                        // Get the column API object
-                        var column = table.column($(this).attr('data-column'));
-
-                        // Toggle the visibility
-                        column.visible(!column.visible());
-                    });
-                });
-
-                /* Datatable row highlight */
-
-                $(document).ready(function () {
-                    var table = $('#datatable-row-highlight').DataTable();
-
-                    $('#datatable-row-highlight tbody').on('click', 'tr', function () {
-                        $(this).toggleClass('tr-selected');
-                    });
-                });
-
-
-                $(document).ready(function () {
-                    $('.dataTables_filter input').attr("placeholder", "Search...");
-                });</script>
-                <script type="text/javascript" src="../../assets/widgets/charts/chart-js/chart-core.js"></script>
-                <script type="text/javascript" src="../../assets/widgets/charts/chart-js/chart-doughnut.js"></script>
-                <script type="text/javascript" src="../../assets/widgets/charts/chart-js/chart-demo-1.js"></script>
-                <script type="text/javascript" src="../../assets/widgets/charts/flot/flot.js"></script>
-                <script type="text/javascript" src="../../assets/widgets/charts/flot/flot-resize.js"></script>
-                <script type="text/javascript" src="../../assets/widgets/charts/flot/flot-stack.js"></script>
-                <script type="text/javascript" src="../../assets/widgets/charts/flot/flot-pie.js"></script>
-                <script type="text/javascript" src="../../assets/widgets/charts/flot/flot-tooltip.js"></script>
-                <script type="text/javascript" src="../../assets/widgets/charts/flot/flot-demo-1.js"></script>
-                <script type="text/javascript" src="../../assets/widgets/charts/sparklines/sparklines.js"></script>
-                <script type="text/javascript" src="../../assets/widgets/charts/sparklines/sparklines-demo.js"></script>
-                <link rel="stylesheet" type="text/css" href="../../assets/widgets/owlcarousel/owlcarousel.css">
-                <script type="text/javascript" src="../../assets/widgets/owlcarousel/owlcarousel.js"></script>
-                <script type="text/javascript" src="../../assets/widgets/owlcarousel/owlcarousel-demo.js"></script>
-                <div id="page-title"><h2>Dashboard</h2>
-
-                    <p>The most complete user interface framework that can be used to create stunning admin dashboards
-                        and presentation websites.</p></div>
+                    <p>Delight UI comes packed with a lot of options when it comes to buttons.</p></div>
                 <div class="row">
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-3"><a href="#" title="Example tile shortcut"
-                                                     class="tile-box tile-box-shortcut btn-danger"><span
-                                    class="bs-badge badge-absolute">1</span>
-
-                                <div class="tile-header">Reach</div>
-                                <div class="tile-content-wrapper"><i class="glyph-icon icon-file-photo-o"></i></div>
-                            </a></div>
-                            <div class="col-md-3"><a href="#" title="Example tile shortcut"
-                                                     class="tile-box tile-box-shortcut btn-success">
-                                <div class="tile-header">Comments</div>
-                                <div class="tile-content-wrapper"><i class="glyph-icon icon-desktop"></i></div>
-                            </a></div>
-                            <div class="col-md-3"><a href="#" title="Example tile shortcut"
-                                                     class="tile-box tile-box-shortcut btn-info"><span
-                                    class="bs-badge badge-absolute">2</span>
-
-                                <div class="tile-header">Reviews</div>
-                                <div class="tile-content-wrapper"><i class="glyph-icon icon-download"></i></div>
-                            </a></div>
-                            <div class="col-md-3"><a href="#" title="Example tile shortcut"
-                                                     class="tile-box tile-box-shortcut btn-warning">
-                                <div class="tile-header">Visitors</div>
-                                <div class="tile-content-wrapper"><i class="glyph-icon icon-code-fork"></i></div>
-                            </a></div>
-                        </div>
-                        <div class="panel mrg20T">
-                            <div class="panel-body"><h3 class="title-hero">Weekly Sales</h3>
-
-                                <div class="example-box-wrapper">
-                                    <div id="data-example-1" class="mrg20B" style="width: 100%; height: 300px"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel-layout">
-                            <div class="panel-box col-xs-6">
-                                <div class="panel-content bg-white">
-                                    <canvas id="icon-cloud" width="80" height="80"></canvas>
-                                </div>
-                                <div class="panel-content bg-black">
-                                    <div class="center-vertical">
-                                        <ul class="center-content nav nav-justified">
-                                            <li><h4><i class="glyph-icon font-green opacity-80 icon-chevron-down"></i> 7
-                                                º</h4>
-
-                                                <p class="opacity-80 text-transform-upr font-size-11 mrg5T">Low</p></li>
-                                            <li><h4><i class="glyph-icon font-red opacity-80 icon-chevron-up"></i> 21 º
-                                            </h4>
-
-                                                <p class="opacity-80 text-transform-upr font-size-11 mrg5T">High</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel-box col-xs-6 bg-blue-alt">
-                                <div class="panel-content"><h3>San Francisco</h3><h4 class="opacity-60">California</h4>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-6">
                         <div class="panel">
                             <div class="panel-body"><h3 class="title-hero">Basic</h3>
 
-                                <div class="example-box-wrapper">
-                                    <table cellpadding="0" cellspacing="0" border="0"
-                                           class="table table-striped table-bordered" id="datatable-example">
-                                        <thead>
-                                        <tr>
-                                            <th>Browser</th>
-                                            <th>Platform(s)</th>
-                                            <th>Engine version</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr class="odd gradeX">
-                                            <td>Internet Explorer 4.0</td>
-                                            <td>Win 95+</td>
-                                            <td class="center">4</td>
-                                        </tr>
-                                        <tr class="even gradeC">
-                                            <td>Internet Explorer 5.0</td>
-                                            <td>Win 95+</td>
-                                            <td class="center">5</td>
-                                        </tr>
-                                        <tr class="odd gradeA">
-                                            <td>Internet Explorer 5.5</td>
-                                            <td>Win 95+</td>
-                                            <td class="center">5.5</td>
-                                        </tr>
-                                        <tr class="even gradeA">
-                                            <td>Internet Explorer 6</td>
-                                            <td>Win 98+</td>
-                                            <td class="center">6</td>
-                                        </tr>
-                                        <tr class="odd gradeA">
-                                            <td>Internet Explorer 7</td>
-                                            <td>Win XP SP2+</td>
-                                            <td class="center">7</td>
-                                        </tr>
-                                        <tr class="even gradeA">
-                                            <td>AOL browser (AOL desktop)</td>
-                                            <td>Win XP</td>
-                                            <td class="center">6</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Firefox 1.0</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td class="center">1.7</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Firefox 1.5</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td class="center">1.8</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Firefox 2.0</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td class="center">1.8</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Firefox 3.0</td>
-                                            <td>Win 2k+ / OSX.3+</td>
-                                            <td class="center">1.9</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Camino 1.0</td>
-                                            <td>OSX.2+</td>
-                                            <td class="center">1.8</td>
-                                        </tr>
-                                        <tr class="gradeA">
-                                            <td>Camino 1.5</td>
-                                            <td>OSX.3+</td>
-                                            <td class="center">1.8</td>
-                                        </tr>
-                                        <tr class="gradeU">
-                                            <td>All others</td>
-                                            <td>-</td>
-                                            <td class="center">-</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                                <div class="example-box-wrapper"><a class="btn btn-default" href="#"
+                                                                    role="button">Link</a>
+                                    <button class="btn btn-default" type="submit">Button</button>
+                                    <input class="btn btn-default" type="button" value="Input"> <input
+                                            class="btn btn-default" type="submit" value="Submit"></div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Disabled states</h3>
+
+                                <div class="example-box-wrapper"><a class="btn btn-default disabled" href="#"
+                                                                    role="button">Link</a>
+                                    <button class="btn btn-default disabled" type="submit">Button</button>
+                                    <input class="btn btn-default disabled" type="button" value="Input"> <input
+                                            class="btn btn-default disabled" type="submit" value="Submit"> <a
+                                            class="btn btn-primary" disabled="disabled" href="#" role="button">Link</a>
+                                    <button class="btn btn-primary" disabled="disabled" type="submit">Button</button>
+                                    <input class="btn btn-primary" disabled="disabled" type="button" value="Input">
+                                    <input class="btn btn-primary" disabled="disabled" type="submit" value="Submit">
                                 </div>
                             </div>
                         </div>
                         <div class="panel">
-                            <div class="panel-body"><h3 class="title-hero">Alternate carousel</h3>
+                            <div class="panel-body"><h3 class="title-hero">Background colors</h3>
 
                                 <div class="example-box-wrapper">
-                                    <div class="owl-carousel-4 slider-wrapper inverse arrows-outside carousel-wrapper">
-                                        <div>
-                                            <div class="thumbnail-box-wrapper mrg5A">
-                                                <div class="thumbnail-box"><a class="thumb-link" href="#" title=""></a>
+                                    <button class="btn btn-primary">Primary</button>
+                                    <button class="btn btn-default">Default</button>
+                                    <button class="btn btn-success">Success</button>
+                                    <button class="btn btn-danger">Danger</button>
+                                    <button class="btn btn-warning">Warning</button>
+                                    <button class="btn btn-info">Info</button>
+                                    <button class="btn btn-blue-alt">Blue alternate</button>
+                                    <button class="btn btn-yellow">Yellow</button>
+                                    <button class="btn btn-purple">Purple</button>
+                                    <button class="btn btn-azure">Azure</button>
+                                    <button class="btn btn-black" href="#">Black</button>
+                                    <button class="btn btn-black-opacity" href="#">black alternate</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Sizes</h3>
 
-                                                    <div class="thumb-content">
-                                                        <div class="center-vertical">
-                                                            <div class="center-content"><i
-                                                                    class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="thumb-overlay bg-black"></div>
-                                                    <img src="../../assets/image-resources/stock-images/img-17.jpg"
-                                                         alt=""></div>
-                                                <div class="thumb-pane">
-                                                    <h3 class="thumb-heading animated rollIn"><a href="#" title="">Working
-                                                        in the morning</a>
-                                                        <small>12 March 2015</small>
-                                                    </h3>
+                                <div class="example-box-wrapper"><a href="#" class="btn btn-xs btn-default" title="">Extra
+                                    small</a> <a href="#" class="btn btn-sm btn-default" title="">Small</a> <a href="#"
+                                                                                                               class="btn btn-default"
+                                                                                                               title="">Default</a>
+                                    <a href="#" class="btn btn-lg btn-default" title="">Large</a> <a href="#"
+                                                                                                     class="btn btn-xs btn-primary"
+                                                                                                     title="">Extra
+                                        small</a> <a href="#" class="btn btn-sm btn-primary" title="">Small</a> <a
+                                            href="#" class="btn btn-primary" title="">Default</a> <a href="#"
+                                                                                                     class="btn btn-lg btn-primary"
+                                                                                                     title="">Large</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Active states</h3>
+
+                                <div class="example-box-wrapper"><a class="btn btn-default active" href="#"
+                                                                    role="button">Link</a>
+                                    <button class="btn btn-primary active" type="submit">Button</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Link colors</h3>
+
+                                <div class="example-box-wrapper"><a class="btn btn-link" href="#">Default</a> <a
+                                        class="btn btn-link font-blue" href="#">Blue</a> <a
+                                        class="btn btn-link font-blue-alt" href="#">Alternate blue</a> <a
+                                        class="btn btn-link font-red" href="#">Red</a> <a
+                                        class="btn btn-link font-orange" href="#">Orange</a> <a
+                                        class="btn btn-link font-green" href="#">Green</a> <a
+                                        class="btn btn-link font-black" href="#">black</a> <a
+                                        class="btn btn-link font-black-alt" href="#">Alternate black</a> <a
+                                        class="btn btn-link font-purple" href="#">Purple</a> <a
+                                        class="btn btn-link font-azure" href="#">Azure</a> <a
+                                        class="btn btn-link font-black" href="#">Black</a> <a
+                                        class="btn btn-black font-white" href="#">White</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Bordered buttons</h3>
+
+                                <div class="example-box-wrapper"><a
+                                        class="btn btn-border btn-alt border-default font-default" href="#"
+                                        title=""><span>Default</span></a> <a
+                                        class="btn btn-border btn-alt border-primary font-primary" href="#"
+                                        title=""><span>Primary</span></a> <a
+                                        class="btn btn-border btn-alt border-blue btn-link font-blue" href="#" title=""><span>Blue</span></a>
+                                    <a class="btn btn-border btn-alt border-blue-alt btn-link font-blue-alt" href="#"
+                                       title=""><span>Alternate blue</span></a> <a
+                                            class="btn btn-border btn-alt border-red btn-link font-red" href="#"
+                                            title=""><span>Red</span></a> <a
+                                            class="btn btn-border btn-alt border-orange btn-link font-orange" href="#"
+                                            title=""><span>Orange</span></a> <a
+                                            class="btn btn-border btn-alt border-green btn-link font-green" href="#"
+                                            title=""><span>Green</span></a> <a
+                                            class="btn btn-border btn-alt border-black btn-link font-black" href="#"
+                                            title=""><span>black</span></a> <a
+                                            class="btn btn-border btn-alt border-purple btn-link font-purple" href="#"
+                                            title=""><span>Purple</span></a> <a
+                                            class="btn btn-border btn-alt border-azure btn-link font-azure" href="#"
+                                            title=""><span>Azure</span></a></div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Icon buttons</h3>
+
+                                <div class="example-box-wrapper">
+                                    <button class="btn btn-primary"><i class="glyph-icon icon-code-fork"></i></button>
+                                    <button class="btn btn-default"><i class="glyph-icon icon-download"></i></button>
+                                    <button class="btn btn-success"><i class="glyph-icon icon-cube"></i></button>
+                                    <button class="btn btn-danger"><i class="glyph-icon icon-crop"></i></button>
+                                    <button class="btn btn-warning"><i class="glyph-icon icon-database"></i></button>
+                                    <button class="btn btn-info"><i class="glyph-icon icon-credit-card"></i></button>
+                                    <button class="btn btn-blue-alt"><i class="glyph-icon icon-film"></i></button>
+                                    <button class="btn btn-yellow"><i class="glyph-icon icon-lightbulb-o"></i></button>
+                                    <button class="btn btn-purple"><i class="glyph-icon icon-shopping-cart"></i>
+                                    </button>
+                                    <button class="btn btn-azure"><i class="glyph-icon icon-dashboard"></i></button>
+                                    <button class="btn btn-black" href="#"><i class="glyph-icon icon-trophy"></i>
+                                    </button>
+                                    <button class="btn btn-black-opacity" href="#"><i class="glyph-icon icon-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Rounded icon buttons</h3>
+
+                                <div class="example-box-wrapper">
+                                    <button class="btn btn-round btn-primary"><i class="glyph-icon icon-code-fork"></i>
+                                    </button>
+                                    <button class="btn btn-round btn-default"><i class="glyph-icon icon-download"></i>
+                                    </button>
+                                    <button class="btn btn-round btn-success"><i class="glyph-icon icon-cube"></i>
+                                    </button>
+                                    <button class="btn btn-round btn-danger"><i class="glyph-icon icon-crop"></i>
+                                    </button>
+                                    <button class="btn btn-round btn-warning"><i class="glyph-icon icon-database"></i>
+                                    </button>
+                                    <button class="btn btn-round btn-info"><i class="glyph-icon icon-credit-card"></i>
+                                    </button>
+                                    <button class="btn btn-round btn-blue-alt"><i class="glyph-icon icon-film"></i>
+                                    </button>
+                                    <button class="btn btn-round btn-yellow"><i class="glyph-icon icon-lightbulb-o"></i>
+                                    </button>
+                                    <button class="btn btn-round btn-purple"><i
+                                            class="glyph-icon icon-shopping-cart"></i></button>
+                                    <button class="btn btn-round btn-azure"><i class="glyph-icon icon-dashboard"></i>
+                                    </button>
+                                    <button class="btn btn-round btn-black" href="#"><i
+                                            class="glyph-icon icon-trophy"></i></button>
+                                    <button class="btn btn-round btn-black-opacity" href="#"><i
+                                            class="glyph-icon icon-eye"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Animated hover icons</h3>
+
+                                <div class="example-box-wrapper">
+                                    <button class="btn btn-alt btn-hover btn-primary"><span>Primary</span> <i
+                                            class="glyph-icon icon-arrow-right"></i></button>
+                                    <button class="btn btn-alt btn-hover btn-default"><span>Default</span> <i
+                                            class="glyph-icon icon-arrow-right"></i></button>
+                                    <button class="btn btn-alt btn-hover btn-success"><span>Success</span> <i
+                                            class="glyph-icon icon-arrow-right"></i></button>
+                                    <button class="btn btn-alt btn-hover btn-danger"><span>Danger</span> <i
+                                            class="glyph-icon icon-arrow-right"></i></button>
+                                    <button class="btn btn-alt btn-hover btn-warning"><span>Warning</span> <i
+                                            class="glyph-icon icon-arrow-right"></i></button>
+                                    <button class="btn btn-alt btn-hover btn-info"><span>Info</span> <i
+                                            class="glyph-icon icon-arrow-right"></i></button>
+                                    <button class="btn btn-alt btn-hover btn-blue-alt"><span>Blue alternate</span> <i
+                                            class="glyph-icon icon-arrow-right"></i></button>
+                                    <button class="btn btn-alt btn-hover btn-yellow"><span>Yellow</span> <i
+                                            class="glyph-icon icon-arrow-right"></i></button>
+                                    <button class="btn btn-alt btn-hover btn-purple"><span>Purple</span> <i
+                                            class="glyph-icon icon-arrow-right"></i></button>
+                                    <button class="btn btn-alt btn-hover btn-azure"><span>Azure</span> <i
+                                            class="glyph-icon icon-arrow-right"></i></button>
+                                    <button class="btn btn-alt btn-hover btn-black" href="#"><span>Black</span> <i
+                                            class="glyph-icon icon-arrow-right"></i></button>
+                                    <button class="btn btn-alt btn-hover btn-black-opacity" href="#"><span>Black alternate</span>
+                                        <i class="glyph-icon icon-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Rounded buttons</h3>
+
+                                <div class="example-box-wrapper">
+                                    <button class="btn ra-100 btn-primary">Primary</button>
+                                    <button class="btn ra-100 btn-default">Default</button>
+                                    <button class="btn ra-100 btn-success">Success</button>
+                                    <button class="btn ra-100 btn-danger">Danger</button>
+                                    <button class="btn ra-100 btn-warning">Warning</button>
+                                    <button class="btn ra-100 btn-info">Info</button>
+                                    <button class="btn ra-100 btn-blue-alt">Blue alternate</button>
+                                    <button class="btn ra-100 btn-yellow">Yellow</button>
+                                    <button class="btn ra-100 btn-purple">Purple</button>
+                                    <button class="btn ra-100 btn-azure">Azure</button>
+                                    <button class="btn ra-100 btn-black" href="#">Black</button>
+                                    <button class="btn ra-100 btn-black-opacity" href="#">black alternate</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-6"><h3 class="title-hero">Button groups</h3>
+
+                                        <div class="example-box-wrapper">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default">Left</button>
+                                                <button type="button" class="btn btn-default">Middle</button>
+                                                <button type="button" class="btn btn-default">Right</button>
+                                            </div>
+                                        </div>
+                                        <h3 class="title-hero">Nesting vertical</h3>
+
+                                        <div class="example-box-wrapper">
+                                            <div class="btn-group-vertical">
+                                                <button type="button" class="btn btn-default">Button</button>
+                                                <div class="btn-group">
+                                                    <button id="btnGroupVerticalDrop1" type="button"
+                                                            class="btn btn-default dropdown-toggle"
+                                                            data-toggle="dropdown">Dropdown <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu"
+                                                        aria-labelledby="btnGroupVerticalDrop1">
+                                                        <li><a href="#">Dropdown link</a></li>
+                                                        <li><a href="#">Dropdown link</a></li>
+                                                    </ul>
+                                                </div>
+                                                <button type="button" class="btn btn-default">Button</button>
+                                                <div class="btn-group">
+                                                    <button id="btnGroupVerticalDrop2" type="button"
+                                                            class="btn btn-default dropdown-toggle"
+                                                            data-toggle="dropdown">Dropdown <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu"
+                                                        aria-labelledby="btnGroupVerticalDrop2">
+                                                        <li><a href="#">Dropdown link</a></li>
+                                                        <li><a href="#">Dropdown link</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="btn-group">
+                                                    <button id="btnGroupVerticalDrop3" type="button"
+                                                            class="btn btn-default dropdown-toggle"
+                                                            data-toggle="dropdown">Dropdown <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu"
+                                                        aria-labelledby="btnGroupVerticalDrop3">
+                                                        <li><a href="#">Dropdown link</a></li>
+                                                        <li><a href="#">Dropdown link</a></li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div>
-                                            <div class="thumbnail-box-wrapper mrg5A">
-                                                <div class="thumbnail-box"><a class="thumb-link" href="#" title=""></a>
+                                    </div>
+                                    <div class="col-md-6"><h3 class="title-hero">Button groups sizing</h3>
 
-                                                    <div class="thumb-content">
-                                                        <div class="center-vertical">
-                                                            <div class="center-content"><i
-                                                                    class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="thumb-overlay bg-black"></div>
-                                                    <img src="../../assets/image-resources/stock-images/img-18.jpg"
-                                                         alt=""></div>
-                                                <div class="thumb-pane">
-                                                    <h3 class="thumb-heading animated rollIn"><a href="#" title="">Working
-                                                        in the morning</a>
-                                                        <small>12 March 2015</small>
-                                                    </h3>
+                                        <div class="example-box-wrapper">
+                                            <div class="btn-toolbar" role="toolbar">
+                                                <div class="btn-group btn-group-lg">
+                                                    <button type="button" class="btn btn-default">Left</button>
+                                                    <button type="button" class="btn btn-default">Middle</button>
+                                                    <button type="button" class="btn btn-default">Right</button>
+                                                </div>
+                                            </div>
+                                            <div class="btn-toolbar" role="toolbar">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-default">Left</button>
+                                                    <button type="button" class="btn btn-default">Middle</button>
+                                                    <button type="button" class="btn btn-default">Right</button>
+                                                </div>
+                                            </div>
+                                            <div class="btn-toolbar" role="toolbar">
+                                                <div class="btn-group btn-group-sm">
+                                                    <button type="button" class="btn btn-default">Left</button>
+                                                    <button type="button" class="btn btn-default">Middle</button>
+                                                    <button type="button" class="btn btn-default">Right</button>
+                                                </div>
+                                            </div>
+                                            <div class="btn-toolbar" role="toolbar">
+                                                <div class="btn-group btn-group-xs">
+                                                    <button type="button" class="btn btn-default">Left</button>
+                                                    <button type="button" class="btn btn-default">Middle</button>
+                                                    <button type="button" class="btn btn-default">Right</button>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div>
-                                            <div class="thumbnail-box-wrapper mrg5A">
-                                                <div class="thumbnail-box"><a class="thumb-link" href="#" title=""></a>
+                                        <h3 class="title-hero">Nesting horizontal</h3>
 
-                                                    <div class="thumb-content">
-                                                        <div class="center-vertical">
-                                                            <div class="center-content"><i
-                                                                    class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="thumb-overlay bg-black"></div>
-                                                    <img src="../../assets/image-resources/stock-images/img-19.jpg"
-                                                         alt=""></div>
-                                                <div class="thumb-pane">
-                                                    <h3 class="thumb-heading animated rollIn"><a href="#" title="">Working
-                                                        in the morning</a>
-                                                        <small>12 March 2015</small>
-                                                    </h3>
+                                        <div class="example-box-wrapper">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default">1</button>
+                                                <button type="button" class="btn btn-default">2</button>
+                                                <div class="btn-group">
+                                                    <button id="btn-group-example" type="button"
+                                                            class="btn btn-default dropdown-toggle"
+                                                            data-toggle="dropdown">Dropdown <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu"
+                                                        aria-labelledby="btn-group-example">
+                                                        <li><a href="#">Dropdown link</a></li>
+                                                        <li><a href="#">Dropdown link</a></li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div>
-                                            <div class="thumbnail-box-wrapper mrg5A">
-                                                <div class="thumbnail-box"><a class="thumb-link" href="#" title=""></a>
+                                        <h3 class="title-hero">Toolbars</h3>
 
-                                                    <div class="thumb-content">
-                                                        <div class="center-vertical">
-                                                            <div class="center-content"><i
-                                                                    class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="thumb-overlay bg-black"></div>
-                                                    <img src="../../assets/image-resources/stock-images/img-20.jpg"
-                                                         alt=""></div>
-                                                <div class="thumb-pane">
-                                                    <h3 class="thumb-heading animated rollIn"><a href="#" title="">Working
-                                                        in the morning</a>
-                                                        <small>12 March 2015</small>
-                                                    </h3>
+                                        <div class="example-box-wrapper">
+                                            <div class="btn-toolbar" role="toolbar">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-default">1</button>
+                                                    <button type="button" class="btn btn-default">2</button>
+                                                    <button type="button" class="btn btn-default">3</button>
+                                                    <button type="button" class="btn btn-default">4</button>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="thumbnail-box-wrapper mrg5A">
-                                                <div class="thumbnail-box"><a class="thumb-link" href="#" title=""></a>
-
-                                                    <div class="thumb-content">
-                                                        <div class="center-vertical">
-                                                            <div class="center-content"><i
-                                                                    class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="thumb-overlay bg-black"></div>
-                                                    <img src="../../assets/image-resources/stock-images/img-23.jpg"
-                                                         alt=""></div>
-                                                <div class="thumb-pane">
-                                                    <h3 class="thumb-heading animated rollIn"><a href="#" title="">Working
-                                                        in the morning</a>
-                                                        <small>12 March 2015</small>
-                                                    </h3>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn btn-default">5</button>
+                                                    <button type="button" class="btn btn btn-default">6</button>
+                                                    <button type="button" class="btn btn btn-default">7</button>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="thumbnail-box-wrapper mrg5A">
-                                                <div class="thumbnail-box"><a class="thumb-link" href="#" title=""></a>
-
-                                                    <div class="thumb-content">
-                                                        <div class="center-vertical">
-                                                            <div class="center-content"><i
-                                                                    class="icon-helper icon-center animated zoomInUp font-white glyph-icon icon-linecons-camera"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="thumb-overlay bg-black"></div>
-                                                    <img src="../../assets/image-resources/stock-images/img-24.jpg"
-                                                         alt=""></div>
-                                                <div class="thumb-pane">
-                                                    <h3 class="thumb-heading animated rollIn"><a href="#" title="">Working
-                                                        in the morning</a>
-                                                        <small>12 March 2015</small>
-                                                    </h3>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-default">8</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1303,202 +1313,559 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="dashboard-box dashboard-box-chart bg-white content-box">
-                            <div class="content-wrapper">
-                                <div class="header">8960 <span>Total Downloads<b>in last</b> 6 years</span></div>
-                                <div class="bs-label bg-orange">~51%</div>
-                                <div class="center-div sparkline-big-alt">2210,2310,2010,2310,2123,2350</div>
-                                <div class="row list-grade">
-                                    <div class="col-md-2">2009</div>
-                                    <div class="col-md-2">2010</div>
-                                    <div class="col-md-2">2011</div>
-                                    <div class="col-md-2">2012</div>
-                                    <div class="col-md-2">2013</div>
-                                    <div class="col-md-2">2014</div>
-                                </div>
-                            </div>
-                            <div class="button-pane">
-                                <div class="size-md float-left"><a href="#" title="">View more details</a></div>
-                                <a href="#" class="btn btn-primary float-right tooltip-button" data-placement="top"
-                                   title="View details"><i class="glyph-icon icon-caret-right"></i></a></div>
-                        </div>
-                        <div class="content-box"><h3 class="content-box-header bg-default"><i
-                                class="glyph-icon icon-cog"></i> Live server status <span
-                                class="header-buttons-separator"><a href="#" class="icon-separator remove-button"
-                                                                    data-animation="flipOutX"><i
-                                class="glyph-icon icon-times"></i></a></span></h3>
+                    <div class="col-md-5">
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Full width</h3>
 
-                            <div class="content-box-wrapper pad0A">
-                                <div class="mrg20A">
-                                    <div class="row">
-                                        <div class="col-md-7 center-margin pad0A">
-                                            <canvas id="chart-area" width="150" height="150"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                                <table class="table remove-background">
-                                    <tbody>
-                                    <tr>
-                                        <td class="text-left size-sm">
-                                            <div class="badge mrg10L badge-small mrg5R bg-azure"></div>
-                                            New user registrations
-                                        </td>
-                                        <td class="text-right"><a href="#"
-                                                                  class="btn btn-sm hover-yellow tooltip-button"
-                                                                  data-placement="top" title="Flag"><i
-                                                class="glyph-icon icon-flag"></i></a> <a href="#"
-                                                                                         class="btn btn-sm hover-blue-alt tooltip-button"
-                                                                                         data-placement="top"
-                                                                                         title="Edit"><i
-                                                class="glyph-icon icon-edit"></i></a> <a href="#"
-                                                                                         class="btn btn-sm hover-red tooltip-button"
-                                                                                         data-placement="top"
-                                                                                         title="Remove"><i
-                                                class="glyph-icon icon-remove"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-left size-sm">
-                                            <div class="badge mrg10L badge-small mrg5R bg-orange"></div>
-                                            Returning visitors
-                                        </td>
-                                        <td class="text-right"><a href="#"
-                                                                  class="btn btn-sm hover-yellow tooltip-button"
-                                                                  data-placement="top" title="Flag"><i
-                                                class="glyph-icon icon-flag"></i></a> <a href="#"
-                                                                                         class="btn btn-sm hover-blue-alt tooltip-button"
-                                                                                         data-placement="top"
-                                                                                         title="Edit"><i
-                                                class="glyph-icon icon-edit"></i></a> <a href="#"
-                                                                                         class="btn btn-sm hover-red tooltip-button"
-                                                                                         data-placement="top"
-                                                                                         title="Remove"><i
-                                                class="glyph-icon icon-remove"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-left size-sm">
-                                            <div class="badge mrg10L badge-small mrg5R bg-gray"></div>
-                                            Page views
-                                        </td>
-                                        <td class="text-right"><a href="#"
-                                                                  class="btn btn-sm hover-yellow tooltip-button"
-                                                                  data-placement="top" title="Flag"><i
-                                                class="glyph-icon icon-flag"></i></a> <a href="#"
-                                                                                         class="btn btn-sm hover-blue-alt tooltip-button"
-                                                                                         data-placement="top"
-                                                                                         title="Edit"><i
-                                                class="glyph-icon icon-edit"></i></a> <a href="#"
-                                                                                         class="btn btn-sm hover-red tooltip-button"
-                                                                                         data-placement="top"
-                                                                                         title="Remove"><i
-                                                class="glyph-icon icon-remove"></i></a></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="panel-layout">
-                                    <div class="panel-box">
-                                        <div class="panel-content bg-facebook"><i
-                                                class="glyph-icon font-size-35 icon-facebook"></i></div>
-                                        <div class="panel-content pad15A bg-white">
-                                            <div class="center-vertical">
-                                                <ul class="center-content list-group list-group-separator row mrg0A">
-                                                    <li class="col-md-6"><b>1,456</b>
-
-                                                        <p class="font-gray">Friends</p></li>
-                                                    <li class="col-md-6"><b>593</b>
-
-                                                        <p class="font-gray">Likes</p></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="panel-layout">
-                                    <div class="panel-box">
-                                        <div class="panel-content bg-twitter"><i
-                                                class="glyph-icon font-size-35 icon-twitter"></i></div>
-                                        <div class="panel-content pad15A bg-white">
-                                            <div class="center-vertical">
-                                                <ul class="center-content list-group list-group-separator row mrg0A">
-                                                    <li class="col-md-6"><b>356</b>
-
-                                                        <p class="font-gray">Followers</p></li>
-                                                    <li class="col-md-6"><b>981</b>
-
-                                                        <p class="font-gray">Tweets</p></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="example-box-wrapper">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button
+                                    </button>
+                                    <button type="button" class="btn btn-default btn-lg btn-block">Block level button
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="panel">
-                            <div class="panel-body"><h3 class="title-hero">Users activity</h3>
+                            <div class="panel-body"><h3 class="title-hero">Justified groups</h3>
 
                                 <div class="example-box-wrapper">
-                                    <div class="timeline-box timeline-box-left">
-                                        <div class="tl-row">
-                                            <div class="tl-item float-right">
-                                                <div class="tl-icon bg-red"><i class="glyph-icon icon-toggle-on"></i>
-                                                </div>
-                                                <div class="popover right">
-                                                    <div class="arrow"></div>
-                                                    <div class="popover-content">
-                                                        <div class="tl-label bs-label label-info">Appointment</div>
-                                                        <p class="tl-content">Lorem ipsum dolor sit amet, consectetuer
-                                                            adipiscing elit. Donec odio.</p>
+                                    <div class="btn-group btn-group-justified"><a class="btn btn-default" role="button">Left</a>
+                                        <a class="btn btn-default" role="button">Middle</a> <a class="btn btn-default"
+                                                                                               role="button">Right</a>
+                                    </div>
+                                    <div class="btn-group btn-group-justified"><a class="btn btn-primary" role="button">Left</a>
+                                        <a class="btn btn-primary" role="button">Middle</a> <a class="btn btn-primary"
+                                                                                               role="button">Right</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <div class="panel-body"><h4 class="title-hero">Sizing</h4>
 
-                                                        <div class="tl-time"><i class="glyph-icon icon-clock-o"></i> a
-                                                            few seconds ago
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                <div class="example-box-wrapper">
+                                    <div class="btn-toolbar float-left" role="toolbar">
+                                        <div class="btn-group">
+                                            <button class="btn btn-default btn-lg dropdown-toggle" type="button"
+                                                    data-toggle="dropdown">Large button <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
                                         </div>
-                                        <div class="tl-row">
-                                            <div class="tl-item float-right">
-                                                <div class="tl-icon bg-primary"><i class="glyph-icon icon-wifi"></i>
-                                                </div>
-                                                <div class="popover right">
-                                                    <div class="arrow"></div>
-                                                    <div class="popover-content">
-                                                        <div class="tl-label bs-label bg-yellow">Teleconference</div>
-                                                        <p class="tl-content">Lorem ipsum dolor sit amet, consectetuer
-                                                            adipiscing elit. Donec odio.</p>
-
-                                                        <div class="tl-time"><i class="glyph-icon icon-clock-o"></i> a
-                                                            few seconds ago
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    </div>
+                                    <div class="btn-toolbar float-left" role="toolbar">
+                                        <div class="btn-group">
+                                            <button class="btn btn-default dropdown-toggle" type="button"
+                                                    data-toggle="dropdown">Default button <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
                                         </div>
-                                        <div class="tl-row">
-                                            <div class="tl-item float-right">
-                                                <div class="tl-icon bg-black"><i class="glyph-icon icon-headphones"></i>
-                                                </div>
-                                                <div class="popover right">
-                                                    <div class="arrow"></div>
-                                                    <div class="popover-content">
-                                                        <div class="tl-label bs-label label-danger">Meeting</div>
-                                                        <p class="tl-content">Lorem ipsum dolor sit amet, consectetuer
-                                                            adipiscing elit. Donec odio.</p>
+                                    </div>
+                                    <div class="btn-toolbar float-left" role="toolbar">
+                                        <div class="btn-group">
+                                            <button class="btn btn-default btn-sm dropdown-toggle" type="button"
+                                                    data-toggle="dropdown">Small button <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="btn-toolbar float-left" role="toolbar">
+                                        <div class="btn-group">
+                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button"
+                                                    data-toggle="dropdown">Extra small button <span
+                                                    class="caret"></span></button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="title-hero">Button dropups</h3>
 
-                                                        <div class="tl-time"><i class="glyph-icon icon-clock-o"></i> a
-                                                            few seconds ago
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                <div class="example-box-wrapper">
+                                    <div class="btn-toolbar" role="toolbar">
+                                        <div class="btn-group dropup">
+                                            <button type="button" class="btn btn-default">Dropup</button>
+                                            <button type="button" class="btn btn-default dropdown-toggle"
+                                                    data-toggle="dropdown"><span class="caret"></span> <span
+                                                    class="sr-only">Toggle Dropdown</span></button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn-group dropup">
+                                            <button type="button" class="btn btn-primary">Right dropup</button>
+                                            <button type="button" class="btn btn-primary dropdown-toggle"
+                                                    data-toggle="dropdown"><span class="caret"></span> <span
+                                                    class="sr-only">Toggle Dropdown</span></button>
+                                            <ul class="dropdown-menu pull-right" role="menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Button dropdowns</h3>
+
+                                <div class="example-box-wrapper">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                                data-toggle="dropdown">Default <span class="caret"></span></button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary dropdown-toggle"
+                                                data-toggle="dropdown">Primary <span class="caret"></span></button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-success dropdown-toggle"
+                                                data-toggle="dropdown">Success <span class="caret"></span></button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info dropdown-toggle"
+                                                data-toggle="dropdown">Info <span class="caret"></span></button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-warning dropdown-toggle"
+                                                data-toggle="dropdown">Warning <span class="caret"></span></button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-danger dropdown-toggle"
+                                                data-toggle="dropdown">Danger <span class="caret"></span></button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h3 class="title-hero">Split button dropdowns</h3>
+
+                                <div class="example-box-wrapper">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default">Default</button>
+                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                                data-toggle="dropdown"><span class="caret"></span> <span
+                                                class="sr-only">Toggle Dropdown</span></button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary">Primary</button>
+                                        <button type="button" class="btn btn-primary dropdown-toggle"
+                                                data-toggle="dropdown"><span class="caret"></span> <span
+                                                class="sr-only">Toggle Dropdown</span></button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-success">Success</button>
+                                        <button type="button" class="btn btn-success dropdown-toggle"
+                                                data-toggle="dropdown"><span class="caret"></span> <span
+                                                class="sr-only">Toggle Dropdown</span></button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info">Info</button>
+                                        <button type="button" class="btn btn-info dropdown-toggle"
+                                                data-toggle="dropdown"><span class="caret"></span> <span
+                                                class="sr-only">Toggle Dropdown</span></button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-warning">Warning</button>
+                                        <button type="button" class="btn btn-warning dropdown-toggle"
+                                                data-toggle="dropdown"><span class="caret"></span> <span
+                                                class="sr-only">Toggle Dropdown</span></button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-danger">Danger</button>
+                                        <button type="button" class="btn btn-danger dropdown-toggle"
+                                                data-toggle="dropdown"><span class="caret"></span> <span
+                                                class="sr-only">Toggle Dropdown</span></button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Toggle buttons</h3>
+
+                                <div class="example-box-wrapper">
+                                    <button type="button" class="btn btn-default" data-toggle="button">Single toggle 1
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-toggle="button">Single toggle 2
+                                    </button>
+                                    <button type="button" class="btn btn-success" data-toggle="button">Single toggle 3
+                                    </button>
+                                </div>
+                                <h3 class="title-hero">Radio toggles</h3>
+
+                                <div class="example-box-wrapper">
+                                    <div class="btn-group" data-toggle="buttons"><a href="#" class="btn btn-info"><input
+                                            name="radio-toggle-1" type="radio"> Radio 1</a> <a href="#"
+                                                                                               class="btn btn-info"><input
+                                            name="radio-toggle-1" type="radio"> Radio 2</a> <a href="#"
+                                                                                               class="btn btn-info"><input
+                                            name="radio-toggle-1" type="radio"> Radio 3</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Checkbox toggles</h3>
+
+                                <div class="example-box-wrapper">
+                                    <div class="btn-group" data-toggle="buttons"><a href="#"
+                                                                                    class="btn btn-default"><input
+                                            type="checkbox"> Checkbox 1</a> <a href="#" class="btn btn-default"><input
+                                            type="checkbox"> Checkbox 2</a> <a href="#" class="btn btn-default"><input
+                                            type="checkbox"> Checkbox 3</a></div>
+                                    <div class="btn-group" data-toggle="buttons"><a href="#"
+                                                                                    class="btn btn-primary"><input
+                                            type="checkbox"> Checkbox 1</a> <a href="#" class="btn btn-primary"><input
+                                            type="checkbox"> Checkbox 2</a> <a href="#" class="btn btn-primary"><input
+                                            type="checkbox"> Checkbox 3</a></div>
+                                    <div class="btn-group" data-toggle="buttons"><a href="#"
+                                                                                    class="btn btn-black"><input
+                                            type="checkbox"> <i class="glyph-icon icon-bell-o"></i></a> <a href="#"
+                                                                                                           class="btn btn-black"><input
+                                            type="checkbox"> <i class="glyph-icon icon-bolt"></i></a></div>
+                                </div>
+                                <h3 class="title-hero">Loading buttons</h3>
+
+                                <div class="example-box-wrapper">
+                                    <button type="button" data-loading-text="Stand by..."
+                                            class="btn loading-button btn-default">Click to load 1
+                                    </button>
+                                    <button type="button" data-loading-text="Loading..."
+                                            class="btn loading-button btn-primary">Click to load 2
+                                    </button>
+                                    <button type="button" data-loading-text="Please wait..."
+                                            class="btn loading-button btn-info">Click to load 3
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Social buttons</h3>
+
+                                <div class="example-box-wrapper"><a href="#" class="btn btn-xs bg-facebook"><span
+                                        class="glyph-icon icon-separator"><i
+                                        class="glyph-icon icon-facebook"></i></span> <span class="button-content">Facebook</span></a>
+                                    <a href="#" class="btn btn-sm bg-facebook"><span
+                                            class="glyph-icon icon-separator"><i
+                                            class="glyph-icon icon-facebook"></i></span> <span class="button-content">Facebook</span></a>
+                                    <a href="#" class="btn bg-facebook"><span class="glyph-icon icon-separator"><i
+                                            class="glyph-icon icon-facebook"></i></span> <span class="button-content">Facebook</span></a>
+                                    <a href="#" class="btn btn-lg bg-facebook"><span
+                                            class="glyph-icon icon-separator"><i
+                                            class="glyph-icon icon-facebook"></i></span> <span class="button-content">Facebook</span></a><br><br><a
+                                            href="#" class="btn btn-xs bg-twitter"><span
+                                            class="glyph-icon icon-separator"><i
+                                            class="glyph-icon icon-twitter"></i></span> <span class="button-content">Twitter</span></a>
+                                    <a href="#" class="btn btn-sm bg-twitter"><span class="glyph-icon icon-separator"><i
+                                            class="glyph-icon icon-twitter"></i></span> <span class="button-content">Twitter</span></a>
+                                    <a href="#" class="btn bg-twitter"><span class="glyph-icon icon-separator"><i
+                                            class="glyph-icon icon-twitter"></i></span> <span class="button-content">Twitter</span></a>
+                                    <a href="#" class="btn btn-lg bg-twitter"><span class="glyph-icon icon-separator"><i
+                                            class="glyph-icon icon-twitter"></i></span> <span class="button-content">Twitter</span></a><br><br><a
+                                            href="#" class="btn btn-xs bg-google"><span
+                                            class="glyph-icon icon-separator"><i
+                                            class="glyph-icon icon-google-plus"></i></span> <span
+                                            class="button-content">Google</span></a> <a href="#"
+                                                                                        class="btn btn-sm bg-google"><span
+                                            class="glyph-icon icon-separator"><i
+                                            class="glyph-icon icon-google-plus"></i></span> <span
+                                            class="button-content">Google</span></a> <a href="#"
+                                                                                        class="btn bg-google"><span
+                                            class="glyph-icon icon-separator"><i
+                                            class="glyph-icon icon-google-plus"></i></span> <span
+                                            class="button-content">Google</span></a> <a href="#"
+                                                                                        class="btn btn-lg bg-google"><span
+                                            class="glyph-icon icon-separator"><i
+                                            class="glyph-icon icon-google-plus"></i></span> <span
+                                            class="button-content">Google</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Dashboard buttons</h3>
+
+                                <div class="example-box-wrapper">
+                                    <div class="content-box remove-border dashboard-buttons clearfix"><a href="#"
+                                                                                                         class="btn vertical-button hover-green"
+                                                                                                         title=""><span
+                                            class="glyph-icon icon-separator-vertical"><i
+                                            class="glyph-icon icon-tags"></i></span> <span class="button-content">Widgets</span></a>
+                                        <a href="#" class="btn vertical-button hover-orange" title=""><span
+                                                class="glyph-icon icon-separator-vertical"><i
+                                                class="glyph-icon icon-fire"></i></span> <span class="button-content">Tables</span></a>
+                                        <a href="#" class="btn vertical-button hover-purple" title=""><span
+                                                class="glyph-icon icon-separator-vertical"><i
+                                                class="glyph-icon icon-bar-chart-o"></i></span> <span
+                                                class="button-content">Charts</span></a> <a href="#"
+                                                                                            class="btn vertical-button hover-yellow"
+                                                                                            title=""><span
+                                                class="glyph-icon icon-separator-vertical"><i
+                                                class="glyph-icon icon-laptop"></i></span> <span class="button-content">Buttons</span></a>
+                                        <a href="#" class="btn vertical-button hover-azure" title=""><span
+                                                class="glyph-icon icon-separator-vertical"><i
+                                                class="glyph-icon icon-code"></i></span> <span class="button-content">Panels</span></a>
+                                        <a href="#" class="btn vertical-button hover-blue" title=""><span
+                                                class="glyph-icon icon-separator-vertical"><i
+                                                class="glyph-icon icon-picture-o"></i></span> <span
+                                                class="button-content">Themes</span></a></div>
+                                </div>
+                                <h4 class="title-hero">Dashboard buttons alternate</h4>
+
+                                <div class="example-box-wrapper">
+                                    <div class="content-box remove-border dashboard-buttons clearfix"><a href="#"
+                                                                                                         class="btn vertical-button remove-border btn-success"
+                                                                                                         title=""><span
+                                            class="glyph-icon icon-separator-vertical"><i
+                                            class="glyph-icon icon-tags"></i></span> <span class="button-content">Widgets</span></a>
+                                        <a href="#" class="btn vertical-button remove-border btn-warning" title=""><span
+                                                class="glyph-icon icon-separator-vertical"><i
+                                                class="glyph-icon icon-fire"></i></span> <span class="button-content">Tables</span></a>
+                                        <a href="#" class="btn vertical-button remove-border btn-purple" title=""><span
+                                                class="glyph-icon icon-separator-vertical"><i
+                                                class="glyph-icon icon-bar-chart-o"></i></span> <span
+                                                class="button-content">Charts</span></a> <a href="#"
+                                                                                            class="btn vertical-button remove-border btn-yellow"
+                                                                                            title=""><span
+                                                class="glyph-icon icon-separator-vertical"><i
+                                                class="glyph-icon icon-laptop"></i></span> <span class="button-content">Buttons</span></a>
+                                        <a href="#" class="btn vertical-button remove-border btn-azure" title=""><span
+                                                class="glyph-icon icon-separator-vertical"><i
+                                                class="glyph-icon icon-code"></i></span> <span class="button-content">Panels</span></a>
+                                        <a href="#" class="btn vertical-button remove-border btn-info" title=""><span
+                                                class="glyph-icon icon-separator-vertical"><i
+                                                class="glyph-icon icon-picture-o"></i></span> <span
+                                                class="button-content">Themes</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-6"><h3 class="title-hero">Pagination</h3>
+
+                                        <div class="example-box-wrapper">
+                                            <ul class="pagination">
+                                                <li><a href="#">&laquo;</a></li>
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">&raquo;</a></li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="title-hero">Active and disabled states</h3>
+
+                                        <div class="example-box-wrapper">
+                                            <ul class="pagination">
+                                                <li class="disabled"><a href="#">&laquo;</a></li>
+                                                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a>
+                                                </li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#">&raquo;</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6"><h3 class="title-hero">Sizing</h3>
+
+                                        <div class="example-box-wrapper">
+                                            <div>
+                                                <ul class="pagination pagination-lg">
+                                                    <li><a href="#">&laquo;</a></li>
+                                                    <li><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#">&raquo;</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="pagination">
+                                                    <li><a href="#">&laquo;</a></li>
+                                                    <li><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#">&raquo;</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="pagination pagination-sm">
+                                                    <li><a href="#">&laquo;</a></li>
+                                                    <li><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#">&raquo;</a></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel">
+                            <div class="panel-body"><h3 class="title-hero">Pager</h3>
+
+                                <div class="example-box-wrapper">
+                                    <ul class="pager">
+                                        <li><a href="#">Previous</a></li>
+                                        <li><a href="#">Next</a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="title-hero">Alignments</h3>
+
+                                <div class="example-box-wrapper">
+                                    <ul class="pager">
+                                        <li class="previous"><a href="#">&larr; Older</a></li>
+                                        <li class="next"><a href="#">Newer &rarr;</a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="title-hero">Disabled state</h3>
+
+                                <div class="example-box-wrapper">
+                                    <ul class="pager">
+                                        <li class="previous disabled"><a href="#">&larr; Older</a></li>
+                                        <li class="next"><a href="#">Newer &rarr;</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
